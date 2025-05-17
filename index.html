@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>trabalho</title>
+</head>
+
+<body>
+   <h1> Igor de Jesus Baltasar </h1>
+    <p > Olá, meu nome é igor, tenho 27 anos, nacscido em Salvador-BA. 
+        Sempre gostei muito de tecnologia, e com essa oportunidade de 
+        poder estudar à distância, econtrei a forma de me introduzir 
+        nesta área, e meu interesse é me introduzir e me atualizar 
+        sempre mais e mais sobre o mundo da tecnologia, pois sei que
+        está em evolução rápida constante.
+    </p>
+    <h1 id="parag"> </h1>
+    <h1>ATIVIDADE FAVORITAS</h1>
+    <ul> 
+        <li>academia</li>
+        <li>correr ao ar livre</li>
+        <li>tocar violão</li>
+    </ul>
+
+    <img class="img1" src="academia.jpg" width="200">
+    <br>
+    <br>
+
+    <h1>PAÍSES QUE GOSTARIA DE VISITAR</h1>
+    <br>
+    <br>
+
+    <TABle border="2">
+        <tr>
+            <td>Estados Unidos &nbsp;<img class="img1" src="estadosunidos.jpg" width="200" ></td>
+         </tr>
+        <tr>
+            <td>Noruega &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img1" src="noruega.jpg" width="200" ></td>
+        </tr>
+        <tr>
+            <td>Japão &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img1" src="japao.jpg" width="200" ></td>
+        </tr>
+    </TABle>
+    <br>
+    <br>
+
+    <h1> QUE TAL SE ENTRETER UM POUCO USANDO A MENTE😀</h1>
+    <br>
+
+    <a href="https://term.ooo/">link para site entreterimento</a>
+
+
+    <style>
+        body{background-color: lightskyblue;}
+        h1{font-size:28px;large; color:darkred;}
+        p{font-size:35px;larger; border: 3px solid;background-color: white; }
+        li{margin: 3%; font-size: 20px; medium;}
+        .img1{border-radius: 18px;}
+        td{background-color:blue; font-size: 25px;large;color: white;}
+        table{margin: 20px; padding: 2px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;} 
+         a:hover{background-color: darkblue;color: rgb(252, 207, 207);}
+ 
+        </style>
+
+        <script>
+            const paragrafo = document.getElementById('parag');
+            const botao = document.createElement('button');botao.textContent = 'Clique para ver uma mensagem!';
+            const mensagemExibida = document.createElement('p');mensagemExibida.id = 'mensagem-exibida';mensagemExibida.style.display = 'none';
+            const mensagens = ['SEJA BEM VINDO!',];
+botao.addEventListener('click', function() {const indiceAleatorio = Math.floor(Math.random() * mensagens.length);mensagemExibida.textContent = mensagens[indiceAleatorio];mensagemExibida.style.display = 'block';});
+paragrafo.parentNode.insertBefore(botao, paragrafo.nextSibling);
+botao.parentNode.insertBefore(mensagemExibida, botao.nextSibling);
+            
+
+
+
+
+        </script>
+            
+</body>
+</html>
